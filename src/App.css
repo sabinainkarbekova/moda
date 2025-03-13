@@ -1,0 +1,353 @@
+@import url('https://fonts.googleapis.com/css2?family=Arial:wght@400;700&display=swap');
+
+body {
+    font-family: Arial, sans-serif;
+    font-family: "Times New Roman", Times, serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #000000;
+    padding: 20px 0;
+    color: rgb(255, 255, 255);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.logo {
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-family: "Times New Roman", Times, serif;
+}
+
+.nav-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 30px;
+}
+
+nav ul li a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #404040;
+}
+
+.subs-btn {
+    background-color: #000a35;
+    color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-left: 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.subs-btn:hover {
+    background-color: #404040;
+}
+
+.HomeHero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 40px 20px;
+    background-color: #000000;
+    max-width: 100%;
+    height: 95vh;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.text {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 170px;
+    color: #ffffff;
+    letter-spacing: 30px;
+    font-family: "Times New Roman", Times, serif;
+}
+
+.left {
+    left: 15%;
+}
+
+.right {
+    right: 15%;
+}
+
+
+
+.fashion-image {
+    width: 89%;
+    height: auto;
+    
+}
+
+.style-container {
+    background-color: white; 
+    text-align: center;
+    width: 100%;
+    min-height: 100vh; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+}
+
+.style-text {
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: rgb(0, 0, 90); 
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+}
+
+.btn:hover {
+    background-color: rgb(0, 0, 34); 
+}
+
+
+
+
+.timeclock {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f3f3f3;
+    position: relative;
+}
+
+.time {
+    position: absolute;
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 48px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+
+.time-image {
+    position: relative;
+    width: 900px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.model1, .model2 {
+    width: 52%;
+    height: auto;
+    object-fit: cover;
+}
+
+.model1 {
+    transform: translateX(-60%);
+
+}
+
+.model2 {
+    transform: translateX(60%);
+}
+
+
+
+.footer {
+    background: #000a35;
+    color: white;
+    padding: 40px 20px;
+    text-align: left;
+    font-family: Arial, sans-serif;
+}
+
+.footer-container {
+    max-width: 900px;
+    margin: auto;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.footer-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+    .footer-nav ul li a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        font-family: Arial, sans-serif;
+    }
+    
+    @media (max-width: 1000px) {
+        .text {
+            font-size: 80px;
+            letter-spacing: 20px;
+        }
+    
+        .left {
+            left: 10%;
+        }
+    
+        .right {
+            right: 10%;
+        }
+    
+        .model1, .model2 {
+            width: 45%;
+            position: absolute;
+            bottom: -624px;
+        }
+    }
+    
+
+    @media (max-width: 770px) {
+        .header-container {
+            align-items: flex-start;
+        }
+    
+        .nav-wrapper {
+            align-items: flex-start;
+            margin-top: 10px;
+        }
+    
+        nav ul {
+            flex-direction: column;
+        }
+    
+        nav ul li {
+            margin-right: 0;
+            margin-bottom: 10px;
+        }
+    
+        .subs-btn {
+            margin-left: 40px;
+            margin-top: 10px;
+        }
+    
+        .text {
+            font-size: 50px;
+            letter-spacing: 10px;
+        }
+    
+        .left {
+            left: 5%;
+        }
+    
+        .right {
+            right: 5%;
+        }
+    
+        .fashion-image {
+            max-width: 80%;
+        }
+    
+        .style-text {
+            font-size: 24px;
+        }
+    
+        .time {
+            font-size: 36px;
+        }
+    
+        .time-image {
+            width: 100%;
+        }
+    
+        .model1, .model2 {
+            width: 45%;
+            position: absolute;
+            bottom: -624px;
+        }
+
+        .footer-top {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    
+        .footer-nav ul {
+            flex-direction: column;
+            gap: 10px;
+        }
+    }
+    
+
+    @media (max-width: 480px) {
+        .text {
+            font-size: 40px;
+            letter-spacing: 5px;
+        }
+    
+        .left {
+            left: 2%;
+        }
+    
+        .right {
+            right: 2%;
+        }
+    
+        .model1, .model2 {
+            display: none;
+        }
+    
+        .style-text {
+            font-size: 20px;
+        }
+    
+        .time {
+            font-size: 24px;
+        }
+
+    }
